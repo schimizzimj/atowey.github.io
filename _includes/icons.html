@@ -3,15 +3,15 @@
     <ul class="social-media-list">
         
 	  <li>
-	    {%include icon-linkedin.html %}
+	    {%include icon-linkedin.html extension=site.linkedin_extension %}
  	  </li>
 
 	  <li>
-	    {%include icon-facebook.html %}
+	    {%include icon-facebook.html username=site.facebook_username %}
  	  </li>
 
           <li>
-            {% include icon-google.html %}
+            {% include icon-google.html url=site.google_url %}
           </li>
 
     </ul>
