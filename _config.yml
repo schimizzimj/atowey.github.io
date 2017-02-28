@@ -13,22 +13,24 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Allison M. Towey
+title: allison m. towey
 email: atowey@nd.edu
-author: Allison M. Towey
+author: allison m. towey
 description: > # this means to ignore newlines until "baseurl:"
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-linkedin_extension: marcus-schimizzi-56a6229b
-facebook_username: 
-phone: 
+linkedin_extension: allison-towey-8b490a113
+facebook_username: allison.towey 
+phone: 952-388-3823
 
 # Build settings
 markdown: kramdown
 theme: minima
+encoding: utf-8
 gems:
   - jekyll-feed
+  - jekyll-postfiles
 exclude:
   - Gemfile
   - Gemfile.lock
