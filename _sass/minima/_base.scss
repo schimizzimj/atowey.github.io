@@ -38,8 +38,6 @@ ul, ol, dl, figure,
   margin-bottom: $spacing-unit / 2;
 }
 
-
-
 /**
  * Images
  */
@@ -84,6 +82,9 @@ li {
  */
 h1, h2, h3, h4, h5, h6 {
   font-weight: $base-font-weight;
+}
+h1 {
+  font-family: $title-font-family;
 }
 
 
@@ -198,5 +199,13 @@ pre {
 
   path {
     fill: $white;
+  }
+
+  &:hover {
+    width: 72px;
+    height: 72px;
+    path {
+      fill: $midnight;
+    }
   }
 }
