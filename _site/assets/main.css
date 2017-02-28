@@ -333,15 +333,38 @@ pre {
       .post-content h4 {
         font-size: 18px; } }
 
-.parallax {
-  background-image: url("{{page.image}}");
-  /* Set a specific height */
+section.module.parallax {
   height: 600px;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
+  background-position: 50% 50%;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover; }
+
+section.module.parallax h1 {
+  color: #fff;
+  font-size: 108px;
+  line-height: 600px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px black;
+  -webkit-text-stroke: 1px black; }
+
+@media (min-width: 800px) and (max-width: 1193px) {
+  section.module.parallax h1 {
+    font-size: 72px; } }
+@media all and (max-width: 799px) {
+  section.module.parallax h1 {
+    font-size: 48px;
+    line-height: 300px; }
+
+  section.module.parallax {
+    height: 300px; } }
+@media all and (max-width: 520px) {
+  section.module.parallax h1 {
+    font-size: 36px; } }
+.title-container {
+  margin: 0 auto; }
 
 /**
  * Syntax highlighting styles
