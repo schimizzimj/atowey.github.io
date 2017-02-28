@@ -22,7 +22,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 linkedin_extension: allison-towey-8b490a113
 facebook_username: allison.towey
-google_url: plus.google.com/u/0/113316127393700321121 
+google_url: https://plus.google.com/u/0/113316127393700321121 
 phone: 952-388-3823
 
 # Build settings
