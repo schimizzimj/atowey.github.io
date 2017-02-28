@@ -2,10 +2,10 @@
  * Site header
  */
 .site-header {
-  border-top: 5px solid $grey-color-dark;
-  border-bottom: 1px solid $grey-color-light;
+  border-top: 5px solid $midnight;
+  border-bottom: 1px solid $midnight;
   min-height: 56px;
-  background-color: $sunset;
+  background-color: $midnight;
 
   // Positioning context for the mobile navigation icon
   position: relative;
@@ -51,8 +51,8 @@
     position: absolute;
     top: 9px;
     right: $spacing-unit / 2;
-    background-color: $background-color;
-    border: 1px solid $grey-color-light;
+    background-color: $midnight;
+    border: 1px solid $midnight;
     border-radius: 5px;
     text-align: right;
 
@@ -66,7 +66,7 @@
       text-align: center;
 
       > svg path {
-        fill: $grey-color-dark;
+        fill: $midnight;
       }
     }
 
@@ -98,9 +98,9 @@
  * Site footer
  */
 .site-footer {
-  border-top: 1px solid $grey-color-light;
+  border-top: 10px solid $purps;
   padding: $spacing-unit 0;
-  background-color: $stormy;
+  background-color: $midnight;
 }
 
 .footer-heading {

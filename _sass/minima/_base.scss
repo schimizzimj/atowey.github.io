@@ -16,8 +16,8 @@ dl, dd, ol, ul, figure {
 body {
   font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
   font-family: $base-font-family;
-  color: $evening;
-  background-color: #f9f9f9;
+  color: $midnight;
+  background-color: $white;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
      -moz-font-feature-settings: "kern" 1;
