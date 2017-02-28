@@ -1,3 +1,4 @@
-<div class="parallax">
+<div class="parallax" {% if page.image %}style="background-image: url({{ page.image }})"
+{% endif %}> >
   <h1 class="parallax-title">{{ page.title | escape }}</h1>
 </div>
