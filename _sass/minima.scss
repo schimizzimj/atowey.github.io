@@ -2,21 +2,22 @@
 
 $base-font-family: 'Amiri', serif;
 $title-font-family: 'Fjalla One', sans-serif;
-$header-footer-family: 'Open Sans', sans-serif;
-$base-font-size:   16px !default;
-$base-font-weight: 400 !default;
-$small-font-size:  $base-font-size * 0.875 !default;
+$header-footer-family: proxima-nova, sans-serif;
+$base-font-size:   16px;
+$base-font-weight: 400;
+$small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5 !default;
 
 $spacing-unit:     30px !default;
 
-$text-color:       #ffffff !default;
+$text-color:       #474747;
 $background-color: #f9f9f9 !default;
 $brand-color:      #2a7ae2 !default;
 
-$midnight:	   #000000;
-$purps:		   #d039fa;
-$white:            #ffffff;
+$midnight:    #000000;
+$purps:   #d039fa;
+$white:   #ffffff;
+$greybae: #474747;
 
 $grey-color:       #f4e8e8 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
