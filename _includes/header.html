@@ -20,7 +20,7 @@
                <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape | upcase }}</a>
               <div class="dropdown-content"> 
                  {% for section in my_page.sections %}
-                 <a href='#'>{{ section }}</a>
+                 <a href='/resume#{{ section | escape }}'>{{ section }}</a>
                  {% endfor %}
               </div>
             </div>

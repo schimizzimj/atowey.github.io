@@ -72,8 +72,6 @@ h1 {
 a {
   color: #ffffff;
   text-decoration: none; }
-  a:visited {
-    color: #ffffff; }
   a:hover {
     color: #d039fa;
     text-decoration: none; }
@@ -153,6 +151,20 @@ pre {
     height: 72px; }
     .icon > svg:hover path {
       fill: #474747; }
+  @media all and (max-width: 549px) {
+    .icon > svg {
+      width: 48px;
+      height: 48px; }
+      .icon > svg:hover {
+        width: 54px;
+        height: 54px; } }
+
+.anchor:before {
+  display: block;
+  content: " ";
+  margin-top: -75px;
+  height: 75px;
+  visibility: hidden; }
 
 /**
  * Site header
@@ -176,6 +188,9 @@ pre {
   margin-left: 5%;
   float: left;
   color: #ffffff; }
+  @media all and (max-width: 549px) {
+    .site-title {
+      font-size: 20px; } }
   .site-title, .site-title:visited {
     color: #ffffff; }
   .site-title:hover {
@@ -192,12 +207,14 @@ pre {
     line-height: 1.5; }
     .site-nav .page-link:not(:last-child) {
       margin-right: 20px; }
-  .site-nav .page-link.contact {
-    color: #474747; }
+  @media all and (min-width: 550px) {
+    .site-nav .page-link.contact {
+      color: #474747; } }
   .site-nav .page-link:hover {
     color: #d039fa; }
-  .site-nav .page-link.contact:hover {
-    color: #474747; }
+  @media all and (min-width: 550px) {
+    .site-nav .page-link.contact:hover {
+      color: #474747; } }
   @media screen and (max-width: 600px) {
     .site-nav {
       position: absolute;
@@ -206,11 +223,11 @@ pre {
       background-color: #474747;
       border: 1px solid #474747;
       border-radius: 5px;
-      text-align: right; }
+      text-align: center; }
       .site-nav .menu-icon {
         display: block;
         float: right;
-        width: 36px;
+        width: 52px;
         height: 26px;
         line-height: 0;
         padding-top: 10px;
@@ -225,28 +242,29 @@ pre {
         padding-bottom: 5px; }
       .site-nav .page-link {
         display: block;
-        padding: 5px 10px;
-        margin-left: 20px; }
+        padding-left: 5px;
+        padding-right: 5px;
+        margin: 0 auto; }
         .site-nav .page-link:not(:last-child) {
           margin-right: 0; } }
 
-.text-oval {
-  display: inline-block;
-  padding: 2px;
-  padding-left: 15px;
-  padding-right: 15px;
-  line-height: 100%;
-  font-size: 15px;
-  -moz-border-radius: 50%;
-  border-radius: 45%;
-  background-color: white;
-  text-align: center; }
-
-.text-oval:hover {
-  background-color: #d039fa;
-  color: #ffffff; }
-  .text-oval:hover .page-link.contact {
-    color: #ffffff; }
+@media all and (min-width: 550px) {
+  .text-oval {
+    display: inline-block;
+    padding: 2px;
+    padding-left: 15px;
+    padding-right: 15px;
+    line-height: 100%;
+    font-size: 15px;
+    -moz-border-radius: 50%;
+    border-radius: 45%;
+    background-color: white;
+    text-align: center; }
+    .text-oval:hover {
+      background-color: #d039fa;
+      color: #ffffff; }
+      .text-oval:hover .page-link.contact {
+        color: #ffffff; } }
 
 .dropdown {
   position: relative;
@@ -272,16 +290,20 @@ pre {
   color: #d039fa;
   border-color: #d039fa; }
 
-.dropdown:hover .dropdown-content {
-  display: block; }
+@media all and (min-width: 550px) {
+  .dropdown:hover .dropdown-content {
+    display: block; } }
 
 /**
  * Social media bar
  */
 .social-media {
-  height: 84px;
+  height: 85.12px;
   width: 100%;
   background-color: #d039fa; }
+  @media all and (max-width: 549px) {
+    .social-media {
+      height: 63.84px; } }
 
 .social-media-wrapper {
   display: table;
@@ -290,7 +312,10 @@ pre {
 .social-media-list {
   list-style: none;
   text-align: center;
-  padding-top: 10px; }
+  padding-top: 10.56px; }
+  @media all and (max-width: 549px) {
+    .social-media-list {
+      padding-top: 7.92px; } }
 
 .social-media-list li {
   display: inline; }
@@ -443,6 +468,40 @@ section.module.parallax h1 {
     letter-spacing: 10px; } }
 .title-container {
   margin: 0 auto; }
+
+/*
+  Resume layouts
+*/
+.sidebar {
+  width: 20%;
+  margin-top: 20px; }
+
+.side {
+  font-weight: 600;
+  font-size: 20px;
+  width: 20%;
+  margin-top: 90px; }
+
+.resume-download {
+  border-top: 2px solid #d039fa;
+  border-bottom: 2px solid #d039fa;
+  margin-bottom: 2px;
+  text-align: center; }
+
+.side-links {
+  border-bottom: 2px solid #d039fa;
+  border-top: 2px solid #d039fa;
+  width: 100%;
+  text-align: center; }
+
+.side-links ul {
+  list-style: none;
+  border: none;
+  margin: 0 auto; }
+
+.resume-link {
+  color: #474747;
+  width: 10%; }
 
 /**
  * Syntax highlighting styles

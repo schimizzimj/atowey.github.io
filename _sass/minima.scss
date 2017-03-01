@@ -20,9 +20,8 @@ $purps:   #d039fa;
 $white:   #ffffff;
 $greybae: #474747;
 
-$grey-color:       #f4e8e8 !default;
-$grey-color-light: lighten($grey-color, 40%) !default;
-$grey-color-dark:  darken($grey-color, 25%) !default;
+$icon-size: 64px;
+$social-media-height: 1.33 * $icon-size;
 
 // Width of the content area
 $content-width:    800px !default;

@@ -1,14 +1,30 @@
 ---
 layout: default
 ---
+
 <article class="post">
-
-  <header class="post-header">
-    <a href="/resume.pdf">Download PDF</a>
-  </header>
-
-  <div class="post-content">
-    {{ content }}
+  <div class="sidebar"></div>
+    <div id="scroller-anchor"></div>
+    <div class="side" id="scroller">
+      <div class="resume-download">
+        <a class="resume-link" href="/resume.pdf">download pdf</a>
+      </div>  
+      <div class="side-links">
+        <ul>
+          {% for section in page.sections %}
+            <li>
+              <a href="#{{ section | escape }}" class="resume-link">{{ section }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="wrapper">
+    <div class="post-content resume">
+      {{ content }}
+    </div>
   </div>
 
 </article>
+<div id="footer"></div>

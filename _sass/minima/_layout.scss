@@ -24,6 +24,10 @@
   margin-left: 5%;
   float: left;
   color: $white;
+  
+  @media all and (max-width: 549px){
+    font-size:20px;
+  }
 
   &,
   &:visited {
@@ -53,17 +57,18 @@
       margin-right: 20px;
     }
   }
-  
-  .page-link.contact {
-    color: $greybae;
+  @media all and (min-width: 550px) { 
+    .page-link.contact {
+      color: $greybae;
+    }
   }
-
   .page-link:hover {
     color: $purps;
   }
-
-  .page-link.contact:hover {
-    color: $greybae;
+  @media all and (min-width: 550px) {
+    .page-link.contact:hover {
+      color: $greybae;
+    }
   }
 
   @include media-query($on-palm) {
@@ -73,12 +78,12 @@
     background-color: $greybae;
     border: 1px solid $greybae;
     border-radius: 5px;
-    text-align: right;
+    text-align: center;
 
     .menu-icon {
       display: block;
       float: right;
-      width: 36px;
+      width: 52px;
       height: 26px;
       line-height: 0;
       padding-top: 10px;
@@ -101,36 +106,38 @@
 
     .page-link {
       display: block;
-      padding: 5px 10px;
-
+      padding-left: 5px;
+      padding-right: 5px;
       &:not(:last-child) {
         margin-right: 0;
       }
-      margin-left: 20px;
+      margin: 0 auto;
     }
   }
 }
 
-.text-oval {
-  display: inline-block;
-  padding: 2px;
-  padding-left: 15px;
-  padding-right: 15px;
-  line-height: 100%;
-  font-size: 15px;
+.text-oval {  
+  @media all and (min-width: 550px) {
+    display: inline-block;
+    padding: 2px;
+    padding-left: 15px;
+    padding-right: 15px;
+    line-height: 100%;
+    font-size: 15px;
 
-  -moz-border-radius: 50%;
-  border-radius: 45%;
+    -moz-border-radius: 50%;
+    border-radius: 45%;
 
-  background-color: white;
-  text-align: center;
-}
+    background-color: white;
+    text-align: center;
 
-.text-oval:hover {
-  background-color: $purps;
-  color: $white;
-  .page-link.contact {
-    color: $white;
+    &:hover {
+      background-color: $purps;
+      color: $white;
+      .page-link.contact {
+        color: $white;
+      }
+    }
   }
 }
 
@@ -163,16 +170,22 @@
 }
 
 .dropdown:hover .dropdown-content {
+  @media all and (min-width: 550px) {  
     display: block;
+  }
 }
 
 /**
  * Social media bar
  */
 .social-media {
-  height: 84px;
+  height: $social-media-height;
   width: 100%;
   background-color: $purps;
+
+  @media all and (max-width: 549px) {
+    height: $social-media-height * 0.75;
+  }
 }
 
 .social-media-wrapper {
@@ -183,7 +196,11 @@
 .social-media-list {
   list-style: none;
   text-align: center;
-  padding-top: 10px;
+  padding-top: (.33 * $icon-size) / 2;
+
+  @media all and (max-width: 549px) {
+    padding-top: (.33 * $icon-size) * 0.375;
+  }
 }
 .social-media-list li {
   display: inline;
@@ -379,4 +396,38 @@ section.module.parallax h1 {
   margin: 0 auto;
 }
 
+/*
+  Resume layouts
+*/
+.sidebar {
+  width: 20%;
+  margin-top: 20px;
+}
+.side { 
+  font-weight: 600;
+  font-size: 20px;
+  width: 20%;
+  margin-top: 90px;
+}
+.resume-download {
+  border-top: 2px solid $purps;
+  border-bottom: 2px solid $purps;
+  margin-bottom: 2px;
+  text-align: center;
+}
+.side-links {
+  border-bottom: 2px solid $purps;
+  border-top: 2px solid $purps;
+  width: 100%;
+  text-align: center;
+}
+.side-links ul {
+  list-style: none;
+  border: none;
+  margin: 0 auto;
+}
+.resume-link {
+  color: $greybae;
+  width: 10%;
+}
 

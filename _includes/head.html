@@ -10,7 +10,12 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
   <link href="https://fonts.googleapis.com/css?family=Amiri|Fjalla+One|Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   {% if jekyll.environment == 'production' and site.google_analytics %}
   {% include google-analytics.html %}
+  {% endif %}
+  
+  {% if page.title == 'resume' %}
+    <script src="/js/scrollnav.js"></script>
   {% endif %}
 </head>
