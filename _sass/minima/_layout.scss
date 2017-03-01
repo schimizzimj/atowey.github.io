@@ -173,19 +173,20 @@
   height: 84px;
   width: 100%;
   background-color: $purps;
-  position: relative;
 }
+
+.social-media-wrapper {
+  display: table;
+  margin: 0 auto;
+}
+
 .social-media-list {
   list-style: none;
-  width: 192px;
-  text-align: center; 
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  &:hover {
-    width: 204px;
-  }
+  text-align: center;
+  padding-top: 10px;
+}
+.social-media-list li {
+  display: inline;
 }
 
 /**
