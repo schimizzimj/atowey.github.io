@@ -6,9 +6,6 @@ layout: default
   <div class="sidebar"></div>
     <div id="scroller-anchor"></div>
     <div class="side" id="scroller">
-      <div class="resume-download">
-        <a class="resume-link" href="/resume.pdf">download pdf</a>
-      </div>  
       <div class="side-links">
         <ul>
           {% for section in page.sections %}
@@ -18,10 +15,20 @@ layout: default
           {% endfor %}
         </ul>
       </div>
+        {% if page.title == 'resume' %}
+          <div class="resume-download">
+            <a class="resume-link" href="/resume.pdf">download pdf</a>
+          </div>
+        {% endif %}  
     </div>
   </div>
   <div class="wrapper">
     <div class="post-content resume">
+      {% if page.title == 'resume' %}  
+        <div class="resume-download-mobile">
+          <a class="resume-link" href="/resume.pdf">download pdf</a>
+        </div>  
+        {% endif %}
       {{ content }}
     </div>
   </div>
