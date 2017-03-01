@@ -1,6 +1,6 @@
 <header class="site-header" role="banner">
 
-    <a class="site-title" href="{{ "/" | relative_url}}">{{ site.title | escape }}</a>
+    <a class="site-title" href="{{ "/" | relative_url}}">{{ site.title | escape | upcase }}</a>
 
     <nav class="site-nav">
       <span class="menu-icon">
@@ -17,7 +17,7 @@
         {% for my_page in sorted_pages %}
           {% if my_page.title == 'resume' %}
             <div class="dropdown">
-               <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+               <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape | upcase }}</a>
               <div class="dropdown-content"> 
                  {% for section in my_page.sections %}
                  <a href='#'>{{ section }}</a>
@@ -25,9 +25,9 @@
               </div>
             </div>
           {% elsif my_page.title != 'contact' %}
-              <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+              <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape | upcase }}</a>
           {% else %}
-              <span class="text-oval"><a class="page-link contact" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a></span>
+              <span class="text-oval"><a class="page-link contact" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape | upcase }}</a></span>
           {% endif %}
         {% endfor %}
       </div>
